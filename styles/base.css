@@ -76,13 +76,14 @@ main {
     display: grid;
     grid-template-columns: 80% 20%;
     
-    padding: 5%;
+    padding: 0%;
 }
 
 .card {
   display: flex;
   flex-direction: column;
  align-items: center;
+ max-height: 30%;
 
 }
 
@@ -91,6 +92,7 @@ main {
     flex-direction: column;
     align-items: center;
     background-color: rgb(172, 205, 235);
+    max-height: 68%;
 }
 
 
