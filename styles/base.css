@@ -1,57 +1,140 @@
-body {
-    display: grid;
-    grid-template-rows: 1f 1fr 1fr;
-    
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+body {
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    max-width: 100%;
+    background-color: aquamarine;
+
+}
+h1, h2, h3 {
+    font-weight: 50%;}
+
+p {
+    font-size: 180%; 
+    line-height: 1.5;
+    position: relative;
+    
+}
+
+h1 {
+    font-size: 300%;
+}
+h2 {
+    font-size: 250%;
+}
+
+h3 {
+    font-size: 200%;
 }
 header {
-display:flex;
-justify-content: center;
-background-color: mediumaquamarine;
-
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
-nav {
+
+.header1 {
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
-    background-color: aqua;
+    max-width: 100%;
 
 }
-footer {
-    display: flex;
-    justify-content: center;
-    background-color: aquamarine;
+
+
+
+
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 8px 12px;
 }
+
+
+.main-content {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--bg-color);
+    text-align: center;
+    padding: 20px;}
+
 main {
     display: grid;
-    grid-template-columns: 70% 30%;
-    justify-items: center;
+    grid-template-columns: 80% 20%;
     
+    padding: 5%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+
+}
+
+.card2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(172, 205, 235);
+}
+
+
+
+.img1  {
+    
+    width: 30%;
+    height: 80%;
+    float:left;
+    margin-left: 3%;
+    margin-top: 3%;
+    position: absolute;
+    
+    top:3%;
+    right: 3%;
+
     
 }
- #item1 {
-    display: grid;
-    background-color: grey;
-    padding: 10%;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr ;
- }
+.img2  {
+    
+    width: 60%;
+    height: 30%;
+    float:right;
+    margin-left: 20%;
+    margin-right: 20%;
+    top:3%;
+    right: 10%;
+    
+}
 
- #item1header {
-  
-    grid-area: 1/1/2/4;
-    background-color: lightblue;
-    padding: 20px;
-    width: 100%;}
+.paragraph1 {
+    padding: 3%;
+    padding-right: 35%;
+    clear: both;
+    position: relative;
+}
 
-#item2header {
+.paragraph2 {
+    padding: 3%;
+    padding-right: 35%;
+    clear: both;
+    position: relative;
 
-    grid-area: 2/1/2/4;
-    background-color: lightblue;
-    padding: 20px;
-    width: 100%
- }
- #item2 {
-    background-color: rgb(48, 41, 31);
-    padding: 30%;
- }
+}
+
+
 
