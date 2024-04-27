@@ -34,11 +34,10 @@ h1 {
     font-size: 300%;
     color: var(--secondary-color);
 }
-h2 {
-    font-size: 250%;
-}
 
-h3 {
+
+
+h2 {
     font-size: 200%;
     text-decoration: underline;
 }
