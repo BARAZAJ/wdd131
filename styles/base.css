@@ -37,7 +37,7 @@ h1 {
     font-size: 300%;
     color: var(--secondary-color);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
+
 }
 
 
@@ -47,6 +47,15 @@ h2 {
     text-decoration: underline;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
+
+h3 {
+    font-size: 150%;
+    text-decoration: underline;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+
+
 header {
     /*background-color: var(--primary-color);*/
     color: var(--bg-color);
