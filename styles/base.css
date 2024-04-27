@@ -6,6 +6,7 @@
     --bg-color: #f8f9fa;        /* Background color */
     --text-color: #343a40;      /* Text color */
     --hover-color:#29af08;
+    
 
 }
 body {
@@ -27,12 +28,16 @@ p {
     font-size: 180%; 
     line-height: 1.5;
     position: relative;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
     
 }
 
 h1 {
     font-size: 300%;
     color: var(--secondary-color);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
 }
 
 
@@ -40,6 +45,7 @@ h1 {
 h2 {
     font-size: 200%;
     text-decoration: underline;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 header {
     /*background-color: var(--primary-color);*/
