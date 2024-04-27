@@ -22,7 +22,7 @@ body {
 
 }
 h1, h2, h3 {
-    font-weight: 50%;}
+    font: weight 50px;}
 
 p {
     font-size: 180%; 
@@ -157,7 +157,6 @@ main {
 }
 .card2links {
     text-decoration: none;
-    font-weight: 20%;
     font-size: 200%;
     padding-top: 10%;
     color: aliceblue;
