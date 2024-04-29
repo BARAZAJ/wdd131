@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+/* NEW FONTS*/
 :root {
     --primary-color: #88929c;   /* Primary color */
     --secondary-color: #1a3f5f; /* Secondary color */
@@ -174,7 +176,8 @@ main {
     padding-top: 10%;
     color: aliceblue;
     gap: 50%;
-    margin-bottom: 80%;
+    margin-bottom: 78%;
 }
+
 
 
