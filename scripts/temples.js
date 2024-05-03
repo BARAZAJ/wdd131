@@ -1,4 +1,3 @@
-
 function updateFooterContent() {
     const currentYearElement = document.getElementById('currentYear');
     const currentYear = new Date().getFullYear();
@@ -12,12 +11,11 @@ function updateFooterContent() {
 
 updateFooterContent();
 
-const article = document.querySelector('article');
 
-article.innerHTML = 'innerHTML supports <strong>HTML </string> tags. The textContent property does not '
+const mainnav = document.querySelector('.navigation1')
+const hambutton = document.querySelector('#menu')
 
-article.style.textAlign= 'left'
-article.append(paragraph, 'Hello world')
+hambutton.addEventListener('click',()=>{mainnav.classList.toggle('show');hambutton.classList.toggle('show');})
 
 
 

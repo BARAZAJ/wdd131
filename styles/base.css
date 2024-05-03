@@ -4,10 +4,10 @@
 :root {
     --primary-color: #88929c;   /* Primary color */
     --secondary-color: #1a3f5f; /* Secondary color */
-    --accent-color: #060558;    /* Accent color */
-    --bg-color: #f8f9fa;        /* Background color */
+    --accent-color: #09077a;    /* Accent color */
+    --bg-color: #ffffff;        /* Background color */
     --text-color: #343a40;      /* Text color */
-    --hover-color:#29af08;
+    --hover-color:#26970a;
     
 
 }
