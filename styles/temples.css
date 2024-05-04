@@ -46,7 +46,6 @@
     }
 }
 
-
 .mobile-nav {
     position: fixed;
     top: 0;
@@ -86,7 +85,6 @@
     }
 }
 
-
 .hamburger {
     display: none; 
     cursor: pointer;
@@ -99,7 +97,6 @@
     margin: 6px 0;
     transition: transform 0.4s ease;
 }
-
 
 .mobile-nav {
     position: fixed;
@@ -154,4 +151,6 @@
         display: block; 
     }
 }
+
+
 

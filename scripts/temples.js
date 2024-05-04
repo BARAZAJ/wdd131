@@ -9,7 +9,10 @@ function updateFooterContent() {
 }
 
 
-updateFooterContent();
+document.addEventListener('DOMContentLoaded', updateFooterContent);
+
+
+
 
 function toggleMobileNav() {
     var mobileNav = document.querySelector('.mobile-nav');
