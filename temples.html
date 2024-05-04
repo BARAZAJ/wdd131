@@ -4,86 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Baraza John">
-    <link rel="stylesheet" href="styles/temples.css" >
+    <meta name="description" content="Responsive hamburg menu for photo album">
+    <title>Responsive Hamburger Menu</title>
+    
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <link rel="stylesheet" href="styles/temples.css">
     
     <script src="scripts/temples.js" type="text/javascript" defer></script>
-    <title>temples</title>
 </head>
 <body>
-    <header>
-        <h1> Temples album</h1>
-        
-        <nav class="navigation1"> 
-            <ul class="navigation">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#old">Old</a></li>
-                <li><a href="#new">New</a></li>
-                <li><a href="#large">Large</a></li>
-                <li><a href="#Small">Small</a></li>
-            </ul>
 
-        </nav>
-        <a id="menu" href="#"></a>
-        
-    </header>
 
-    <main>
-        <h2>Home</h2>
+<header>
+    <h1>Temples album</h1>
+    <nav class="navigation1">
+        <a href="#home">Home</a>
+        <a href="#old">Old</a>
+        <a href="#new">New</a>
+        <a href="#large">Large</a>
+        <a href="#small">Small</a>
+    </nav>
     
-        <section class="pics" >
-            
-                <figure>
-                    <img src="pictures/aba_nigeria_temple_lds.webp" alt="Temple 1">
-                    <figcaption>Aba, Nigeria temple</figcaption>
-                </figure>
-            
-                <figure>
-                    <img src="pictures/accra_ghana_temple_lds.webp" alt="Temple 2">
-                    <figcaption>Accra, Ghana temple</figcaption>
-                </figure>
-                <figure>
-                    <img src="pictures/adelaide_australia_temple_lds.webp" alt="Temple 3">
-                    <figcaption>Adelaide, Australia temple</figcaption>
-                </figure>
-           
-                <figure>
-                    <img src="pictures/albuquerque_temple_lds.webp" alt="Temple 4">
-                    <figcaption>albuquerque, USA temple</figcaption>
-                </figure>
-                <figure>
-                    <img src="pictures/anchorage_temple_lds.webp" alt="Temple 5">
-                    <figcaption>anchorage temple</figcaption>
-                </figure>
-                <figure>
-                    <img src="pictures/apia_samoa_temple_lds.webp" alt="Temple 6">
-                    <figcaption>Apia, Samoa temple</figcaption>
-                </figure>
-           
-                <figure>
-                    <img src="pictures/asuncion_paraguay_temple_lds.webp" alt="Temple 7">
-                    <figcaption>Asuncion, Paraguay temple</figcaption>
-                </figure>
-                <figure>
-                    <img src="pictures/atlanta_temple_lds.webp" alt="Temple 8">
-                    <figcaption>Atlanta, USA temple</figcaption>
-                </figure>
-                <figure>
-                    <img src="pictures/bogota_colombia_temple_lds.webp" alt="Temple 9">
-                    <figcaption>Bogota, Columbia temple</figcaption>
-                </figure>
-           
-        </section>
-    </main>
+    <button class="hamburger" onclick="toggleMobileNav()">
+        <div class="hamburger-bar"></div>
+        <div class="hamburger-bar"></div>
+        <div class="hamburger-bar"></div>
+    </button>
+</header>
 
-    <footer>
-        <p class="footertext"> 
-            
-            &copy;<span id="currentYear"></span>
-            Baraza John<br>
-            Jinja, Uganda
-        </p>
-        <p id="lastModified" class = "footertext"></p>
-    </footer>
+
+<div class="mobile-nav">
+    <a href="#home">Home</a>
+    <a href="#old">Old</a>
+    <a href="#new">New</a>
+    <a href="#large">Large</a>
+    <a href="#small">Small</a>
+</div>
+
+
+<main>
+    <h2 >Home</h2>
     
+    <div class="pics">
+        
+        <figure>
+            <img src="pictures/aba_nigeria_temple_lds.webp" alt="Temple 1">
+            <figcaption>Aba, Nigeria temple</figcaption>
+        </figure>
+    
+        <figure>
+            <img src="pictures/accra_ghana_temple_lds.webp" alt="Temple 2">
+            <figcaption>Accra, Ghana temple</figcaption>
+        </figure>
+        <figure>
+            <img src="pictures/adelaide_australia_temple_lds.webp" alt="Temple 3">
+            <figcaption>Adelaide, Australia temple</figcaption>
+        </figure>
+   
+        <figure>
+            <img src="pictures/albuquerque_temple_lds.webp" alt="Temple 4">
+            <figcaption>albuquerque, USA temple</figcaption>
+        </figure>
+        <figure>
+            <img src="pictures/anchorage_temple_lds.webp" alt="Temple 5">
+            <figcaption>anchorage temple</figcaption>
+        </figure>
+        <figure>
+            <img src="pictures/apia_samoa_temple_lds.webp" alt="Temple 6">
+            <figcaption>Apia, Samoa temple</figcaption>
+        </figure>
+   
+        <figure>
+            <img src="pictures/asuncion_paraguay_temple_lds.webp" alt="Temple 7">
+            <figcaption>Asuncion, Paraguay temple</figcaption>
+        </figure>
+        <figure>
+            <img src="pictures/atlanta_temple_lds.webp" alt="Temple 8">
+            <figcaption>Atlanta, USA temple</figcaption>
+        </figure>
+        <figure>
+            <img src="pictures/bogota_colombia_temple_lds.webp" alt="Temple 9">
+            <figcaption>Bogota, Columbia temple</figcaption>
+        </figure>
+        <figure>
+            <img src="pictures/birmingham_alabama_temple_lds.webp" alt="Temple 9">
+            <figcaption>Birmingham, Alabama temple</figcaption>
+        </figure>
+
+    </div>
+</main>
+
+<footer>
+    <p class="footertext"> 
+            
+        &copy;<span id="currentYear"></span>
+        Baraza John<br>
+        Jinja, Uganda
+    </p>
+    <p id="lastModified" class="footertext"></p>
+</footer>
+
 </body>
 </html>

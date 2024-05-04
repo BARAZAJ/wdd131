@@ -11,11 +11,16 @@ function updateFooterContent() {
 
 updateFooterContent();
 
+function toggleMobileNav() {
+    var mobileNav = document.querySelector('.mobile-nav');
+    mobileNav.classList.toggle('is-active');
+}
 
-const mainnav = document.querySelector('.navigation1')
-const hambutton = document.querySelector('#menu')
 
-hambutton.addEventListener('click',()=>{mainnav.classList.toggle('show');hambutton.classList.toggle('show');})
+    
+
+
+
 
 
 
