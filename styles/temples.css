@@ -110,13 +110,13 @@
     background-color: #0c0c0c;
     padding-top: 80px; 
     text-align: center;
-    transform: translateX(-100%); /* Initially off-screen */
+    transform: translateX(-100%); 
     transition: transform 0.4s ease;
     z-index: 99;
 }
 
 .mobile-nav.is-active {
-    transform: translateX(0); /* Slide in when active */
+    transform: translateX(0); 
 }
 
 .mobile-nav a {
@@ -133,25 +133,25 @@
 }
 
 @media (max-width: 768px) {
-    /* Hamburger menu styles for smaller screens */
+    
     .hamburger {
-        display: block; /* Show hamburger icon */
+        display: block; 
     }
 
     .navigation1 {
-        display: none; /* Hide main navigation */
+        display: none; 
     }
 
     header {
-        justify-content: space-between; /* Space out logo and hamburger */
+        justify-content: space-between; 
     }
 
     .mobile-nav {
-        padding-top: 120px; /* Adjust padding for menu items */
+        padding-top: 120px; 
     }
 
     .hamburger-bar {
-        display: block; /* Show hamburger bars */
+        display: block; 
     }
 }
 
