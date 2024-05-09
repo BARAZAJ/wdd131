@@ -12,12 +12,7 @@ function updateFooterContent() {
 
 updateFooterContent();
 
-const article = document.querySelector('article');
 
-
-
-article.style.textAlign= 'left'
-article.append(paragraph, 'Hello world')
 
 
 
