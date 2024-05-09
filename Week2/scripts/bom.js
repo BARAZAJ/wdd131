@@ -1,16 +1,11 @@
-const input = document.querySelector('#favchap' );
-const button = document.querySelector('button');
-const list = document.querySelector('list');
+document.getElementById('mobile-menu').addEventListener('click', function() {
+    var navList = document.querySelector('.nav-list');
+    var menuToggle = document.querySelector('.menu-toggle');
+    
+    navList.classList.toggle('active');
+    menuToggle.classList.toggle('active');
+});
 
-const li = document.createElement('li');
-
-const deleteButton = document.createElement('button');
-li.textContent = input.value;
-deleteButton.textContent = 'X';
-li.append(deleteButton);
-list.append(li);
-
-button.addEventListener('click', function() {if (input.value.trim() !== '') { ... }})
 
 
 

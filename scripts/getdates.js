@@ -14,7 +14,7 @@ updateFooterContent();
 
 const article = document.querySelector('article');
 
-article.innerHTML = 'innerHTML supports <strong>HTML </string> tags. The textContent property does not '
+
 
 article.style.textAlign= 'left'
 article.append(paragraph, 'Hello world')
