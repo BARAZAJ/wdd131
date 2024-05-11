@@ -1,0 +1,64 @@
+:root {
+    --primary-color: #FF0000; /* Example primary color */
+    --secondary-color: #00FF00; /* Example secondary color */
+}
+
+/* Your CSS styles for layout, typography, and design principles */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 15px 10%;
+    border-bottom: 1px solid #000;
+    z-index: 10;
+    background-color: #000;
+}
+
+
+main{
+    
+    min-width: 100%;
+    min-height: 100% ;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+
+
+.hero {
+    position: relative;
+    top:10%
+
+    /* Styles for hero section */
+}
+
+.weather {
+    /* Styles for weather section */
+}
+
+.weather .weather-icon::after {
+    /* Pseudo element for weather icon */
+    content: "⛅";
+    font-size: 24px;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    /* Styles for smaller screens */
+}
+
+/* Other media queries as needed */
+
+/* Additional CSS styles for layout and components */
