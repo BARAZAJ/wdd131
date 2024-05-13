@@ -1,3 +1,15 @@
+:root {
+   --primary-color: #88929c;   /* Primary color */
+   --secondary-color: #1a3f5f; /* Secondary color */
+   --accent-color: #09077a;    /* Accent color */
+   --bg-color: #ffffff;        /* Background color */
+   --text-color: #343a40;      /* Text color */
+      --hover-color:#26970a;
+}
+
+
+
+
 body{
     display: grid;
     height: 100vh;
@@ -80,11 +92,14 @@ body{
 .data li {
    font-size: 100%;
    margin-bottom: 10px;
+   display: flex;
+   flex-direction: row;
+   background-color: azure transparent(20%);
 }
 
 .data li strong {
    font-weight: bold;
-   margin-right: 100%;
+   margin-right: 10%;
 }
 
 .weather{
@@ -131,6 +146,7 @@ img{
    }
 
    main{
+      
       grid-area: main;
       display: grid;
       grid-template-columns: 1fr;
@@ -145,25 +161,33 @@ img{
       grid-area: footer;
    }
    div.data{
+      grid-area: data;
       display: flex;
       align-items: center;
       justify-content: center;
-      grid-area: data;
-      position: relative;
+      position:relative;
+      padding: 50px ; 
+     
+      margin-left: 30%;
    }
-
+   img{
+      width: 100%;
+      height: 100%;
+   }
    div.data.li{
       display: flex;
+      margin-left: 30%;
+      flex-direction: row;
     
    }
    div.weather{
       
       grid-area: weather;
       display: block;
-      margin-left: 80%;
+      margin-left: 20%;
       position:relative;
-      font-size: 150%;
-
+      font-size: 100%;
+      background-color: rgb(142, 194, 142);
 }
 }
 
