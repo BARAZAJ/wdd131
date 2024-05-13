@@ -55,7 +55,7 @@ body{
     
  }
  .header h1{
-   font-size: 400%; 
+   font-size: 500%; 
  }
 
  .data{
@@ -106,7 +106,7 @@ body{
    display: block;
    margin-left: 80%;
    position:absolute;
-   
+   margin-top: 20%;
    font-size: 150%;
    
 }
@@ -168,7 +168,15 @@ img{
       position:relative;
       padding: 50px ; 
      
-      margin-left: 30%;
+      margin-left: 20%;
+   }
+   div.data.h1{
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      margin-right: 80%;
+
+
    }
    img{
       width: 100%;
@@ -187,7 +195,8 @@ img{
       margin-left: 30%;
       position:relative;
       font-size: 100%;
-      background-color: rgb(142, 194, 142);
+      
+   
 }
 }
 
