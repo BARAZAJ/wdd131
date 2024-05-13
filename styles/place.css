@@ -109,10 +109,10 @@ img{
    background-position: center;
 }
 
-@media only screen and (max-width:760px) {
+@media only screen and (max-width:550px) {
    body{
       display: grid;
-      grid-template-columns: auto;
+      grid-template-columns: 1fr;
       grid-template-rows: 0.1fr 1fr 0.5fr 0.5fr 0.1fr;
       grid-area: 
       "header"
