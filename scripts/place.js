@@ -8,7 +8,7 @@ function updateFooterContent() {
     const lastModifiedDate = document.lastModified;
     lastModifiedElement.textContent = `Last modified: ${lastModifiedDate}`;
 }
-
+updateFooterContent();
  // Function to display wind chill on page load
  window.onload = function() {
     const temperature = 20; // Static temperature value in °C

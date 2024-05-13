@@ -12,11 +12,24 @@
 </head>
 <body>
     <header> 
-        <p>Uganda</p>
+        <h1>Uganda</h1>
     </header>
     <main>
-       <img src="pictures/trees-8423228.webp" alt="Savanna">
+        <picture>
+            <!-- Source for smaller screens (up to 600px) -->
+            <source media="(max-width: 760px)" srcset="src">
+    
+            <!-- Source for medium screens (601px to 1000px) -->
+            <source media="(min-width: 760px) and (max-width: 1000px)" srcset="image-medium.jpg">
+    
+            <!-- Source for larger screens (above 1000px) -->
+            <source media="(min-width: 1001px)" srcset="pictu">
+    
+            <!-- Fallback image for browsers that do not support <picture> -->
+            <img src="pictures/tree1-large.webp" alt="Savanna">
 
+        </picture>
+      
         <section class="data">
             <h2>Data</h2>
             <ul>
@@ -31,7 +44,7 @@
         </section>
         
         <section class="weather">
-            <h2>Weather</h2>
+            <h2>Weather <img src="pictures/weather icon2.svg"></h2>
             <p>Temperature: 20°C</p>
             <p>Wind Speed: 10 km/h</p>
             <p>Wind Chill: <span id="windChillValue"></span></p>
@@ -47,8 +60,8 @@
         <p> 
             
             &copy;<span id="currentYear"></span>
-            Baraza John<br>
-            Jinja, Uganda
+            Baraza John Jinja, Uganda<br>
+            
         </p>
         <p id="lastModified"></p> 
 

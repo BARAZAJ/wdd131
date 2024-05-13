@@ -2,7 +2,7 @@ body{
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr ;
-    grid-template-rows: 0.2fr 1.2fr 0.2fr ;
+    grid-template-rows: 0.1fr 1.2fr 0.1fr ;
     grid-template-areas: 
     "nav"
     "main"
@@ -27,8 +27,9 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: red;
+    background-color: rgb(37, 109, 46);
     margin-bottom: 0%;
+    color: beige;
 
  }
 
@@ -37,24 +38,26 @@ body{
     align-items: center;
     justify-content: center;
     grid-area: nav;
-    background-color: red;
+    background-color: rgb(37, 109, 46) ;
+    
+    
+ }
+ .header h1{
+   font-size: 400%; 
  }
 
  .data{
    display: flex;
    align-items: flex-start;
    justify-content: flex-start;
+   position:absolute;
+   padding: 50px ; 
    flex-direction: column;
-   position:absolute
+   
+   
 
  }
 
-
-
-.data {
-   padding: 50px 20px;
-  
-}
 
 .data h2 {
    text-align: center;
@@ -63,38 +66,81 @@ body{
    display: flex;
    align-items: center;
    justify-content: center;
+   font-size: 200%;
+
 }
 
 .data ul {
    list-style: none;
    padding: 0;
+   
 }
 
 .data li {
-   font-size: 18px;
+   font-size: 100%;
    margin-bottom: 10px;
 }
 
 .data li strong {
    font-weight: bold;
-   margin-right: 10px;
+   margin-right: 100%;
 }
 
 .weather{
    display: block;
    margin-left: 80%;
-   position:absolute
+   position:absolute;
+   
+   font-size: 150%;
    
 }
+
+.weather img {
+   width: 40px;
+   height: 40px;
+}
 img{
-   max-height: 100%;
+   height: 100vh;
    max-width: 100%;
    grid-area: main;
    z-index: -1; /* Place the background behind other content */
    position: relative; /* Ensure positioning relative to grid */
-   background-image: url("https://github.com/BARAZAJ/wdd131/blob/main/pictures/Jinja-Hero.webp"); /* Replace with your image path */
    background-size: cover;
    background-position: center;
+}
+
+@media only screen and (max-width:760px) {
+   body{
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: 0.1fr 1fr 0.5fr 0.5fr 0.1fr;
+      grid-area: 
+      "header"
+      "picture"
+      "data"
+      "weather"
+      "footer";
+   }
+
+   header{
+      grid-area: header;
+      
+   }
+
+   img{
+      grid-area: picture;
+
+
+   }
+   .weather{
+      grid-area: weather;
+   }
+   .data{
+      grid-area: data;
+   }
+   footer{
+      grid-area: footer;
+   }
 }
 
 
