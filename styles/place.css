@@ -151,7 +151,7 @@ img{
    .data{
       grid-area: data;
    }
-   .weather{
+   section .weather{
       grid-area: weather;
    }
 
