@@ -1,0 +1,16 @@
+body{
+    display: grid;
+    height: 100hv;
+    grid-template-columns: 0.5fr 2fr 0.2fr;
+    grid-template-rows: 0.4fr  1fr 0.4fr;
+    grid-template-areas: 
+                    "header header header"
+                    "Data main weather"
+                    "footer footer footer"    
+}
+
+
+header{
+    grid-area: header;
+    
+}

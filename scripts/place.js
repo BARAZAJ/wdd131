@@ -1,12 +1,3 @@
-let navbar = document.querySelector('nav');
-let menulinks = document.getElementById("menu-links");
-
-
-function toogleMenu(){
-    menulinks.classList.toggle('show-menu');
-}
-
-
 
 function updateFooterContent() {
     const currentYearElement = document.getElementById('currentYear');
@@ -18,24 +9,27 @@ function updateFooterContent() {
     lastModifiedElement.textContent = `Last modified: ${lastModifiedDate}`;
 }
 
+ // Function to display wind chill on page load
+ window.onload = function() {
+    const temperature = 20; // Static temperature value in °C
+    const windSpeed = 10; // Static wind speed value in km/h
+    const units = 'metric'; // Units for temperature and wind speed (metric or imperial)
 
-document.addEventListener('DOMContentLoaded', updateFooterContent);
+    // Calculate wind chill using the function
+    const windChill = calculateWindChill(temperature, windSpeed, units);
 
-
-
-
-
-
-window.onscroll = function(){
-    if(window.scrollY >0){
-        navbar.style.background = '#eefff9';
-    }else{
-        navbar.style.background = 'transparent';
-    }
-    }
+    // Display wind chill value on the webpage
+    const windChillElement = document.getElementById('windChillValue');
+    windChillElement.textContent = windChill;
+};
 
 
 
+
+
+
+
+   
 
 
 

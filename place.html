@@ -11,63 +11,74 @@
 <script src="scripts/place.js" type="text/javascript" defer></script>
 </head>
 <body>
-    <header>
-    <nav>
-        <img class="logo" src="pictures/istockphoto-1180612994-1024x1024.webp" alt="logo">
-        <p onclick="toogleMenu">  Uganda</p>
-           
-        
-    </nav>
+    <header> 
+        <p>Uganda</p>
     </header>
     <main>
-    <div class="header">
-        <div class="header-content">
-        <h1><span>FREE</span><br><span>LANCER</span></h1>
-        <div class="btn-container">
-            <button class="btn-dark" >Request call back <img class="logo" src="pictures/WEATHER.webp" alt="icon"></button>
-            <button class="btn-light" >Know more <img class="logo" src="pictures/DATA.jpeg" alt="icon"> </button>
-        </div>
+       <img src="pictures/trees-8423228.webp" alt="Savanna">
 
-        <p>Passionate UI/UX designers with 10years of experience</p>
-        </div>
-        <img class="background-img" src="pictures/ug.webp" alt="background image">
-    </div>
-    <div>
-        <h2>Data</h2>
-        <p>Area : 100000sq km
-            population : 50,000,000
-            Capital: Kampala
-            Languages:English
-            Currency: Uganda shillings
-            Calling code: +256
-            Internet TLD: .UG
-        </p>
-
-    </div>
-    <div>
-        <h2>Weather</h2>
-        <p>Temperature : 10 c
-            Conditions : Partly Cloudy
-            Winds: 5km/hr
-            Wind chill: 9.8 C
-            
-        </p>
-    </div>
-
-    </div>
-</main>
-    <footer  onclick="toogleMenu">
+        <section class="data">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Area:</strong> 100,000 sq km</li>
+                <li><strong>Population:</strong> 50,000,000</li>
+                <li><strong>Capital:</strong> Kampala</li>
+                <li><strong>Languages:</strong> English</li>
+                <li><strong>Currency:</strong> Uganda Shillings</li>
+                <li><strong>Calling Code:</strong> +256</li>
+                <li><strong>Internet TLD:</strong> .UG</li>
+            </ul>
+        </section>
         
+        <section class="weather">
+            <h2>Weather</h2>
+            <p>Temperature: 20°C</p>
+            <p>Wind Speed: 10 km/h</p>
+            <p>Wind Chill: <span id="windChillValue"></span></p>
+        </section>
+    
+    
+
+
+
+    </main>
+    <footer>
+
         <p> 
             
             &copy;<span id="currentYear"></span>
             Baraza John<br>
             Jinja, Uganda
         </p>
-    <p id="lastModified"></p> 
-        
+        <p id="lastModified"></p> 
 
     </footer>
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
+   
