@@ -73,6 +73,7 @@ body{
 .data ul {
    list-style: none;
    padding: 0;
+   width: 100%;
    
 }
 
@@ -139,25 +140,31 @@ img{
       "data"
       "weather"
       ;
-
    }
    footer{
       grid-area: footer;
    }
-   main picture{
-      grid-area:pic;
-
-   }
-   .data{
+   div.data{
+      display: flex;
+      align-items: center;
+      justify-content: center;
       grid-area: data;
+      position: relative;
    }
-   section .weather{
+
+   div.data.li{
+      display: flex;
+    
+   }
+   div.weather{
+      
       grid-area: weather;
-   }
+      display: block;
+      margin-left: 80%;
+      position:relative;
+      font-size: 150%;
 
-
-
-
+}
 }
 
 
