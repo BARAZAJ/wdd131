@@ -167,7 +167,6 @@ img{
       justify-content: center;
       position:relative;
       padding: 50px ; 
-      background-color: #88929c;
       margin-left: 20%;
    }
    div.data.h1{
@@ -195,7 +194,7 @@ img{
       margin-left: 30%;
       position:relative;
       font-size: 100%;
-      background-color: #1a3f5f;
+      
       
    
 }
