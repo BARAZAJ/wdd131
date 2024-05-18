@@ -3,7 +3,7 @@
     --accent-color: #09077a;    /* Accent color */
     --bg-color:rgb(2, 5, 2);;        /* Background color */
     --text-color: white;      /* Text color */
-    --hover-color:rgb(6, 238, 83);
+    --hover-color:rgb(4, 116, 97);
        
 
  }
@@ -64,7 +64,7 @@ nav {
 }
 
 .menu li a:hover{
-    background-color: var(--hover-color);
+    background-color: rgb(4, 116, 97);
     
 }
 
