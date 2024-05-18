@@ -17,7 +17,15 @@
     .menu{
         display: none;
     }
-
+    main div figure img {
+        width:380px;
+        height: 320px;
+        gap: 10px;
+    }
+    main{
+        padding-top: 15%;
+    }
+    
 
 #nav-links.show {
     
