@@ -3,16 +3,11 @@
     --accent-color: #09077a;    /* Accent color */
     --bg-color:rgb(29, 109, 40);;        /* Background color */
     --text-color: white;      /* Text color */
-       --hover-color::#133f08;
+    --hover-color:rgb(5, 66, 5);
        
 
  }
  
-
-
-
-
-
 
 body {
     font-family: Arial, sans-serif;
@@ -108,7 +103,7 @@ footer {
     background-color:var(--bg-color);
     color: var(--text-color);
     text-align: center;
-    padding: none;
+    padding: 0;
     bottom: 0%;
     position: fixed;
     width: 100%;
