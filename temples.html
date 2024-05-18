@@ -3,101 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Dynamic Web Fundamentals - BARAZA JOHN</title>
-    <meta name="description" content="WDD 131 Dynamic Web Fundamentals">
-    <meta name="author"  content="Baraza John">
-    <link rel="stylesheet" href="styles/base.css">
+    <title>Temple Album</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <script src="scripts/getdates.js" type="text/javascript" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <link rel="stylesheet" href="styles/temples.css">
+    <script src="scripts/temples.js" type="text/javascript" defer></script>
 
 </head>
-<body >
+<body>
     <header>
-        <h1 class="header1">WDD 131 - Dynamic Web Fundamentals - BARAZA JOHN</h1>
-    
-        <nav class="header1">
-            
-            <a  href="https://www.linkedin.com/in/jbbaraza/">Linkedin</a>
-            <a  href="https://byui.instructure.com/">I-learn</a>
-            
-            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/hel/5?lang=eng&id=p11#p11">Scripture</a>
+        <div class="navbar">
+            <div class="logo">Temple Album</div>
 
-            <a href="index.html"> Final Project</a>        
-        </nav>
+            <nav class="nav-links">
+                <ul id="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Old</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Large</a></li>
+                    <li><a href="#">Small</a></li>
+                </ul>
+            </nav>
+
+            <nav class="menu">
+                <ul >
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Old</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Large</a></li>
+                    <li><a href="#">Small</a></li>
+                </ul>
+            </nav>
+            
+           
+            <div class="hamburger" id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
     </header>
-    
-    <main>
-        <section class="card">
-            <h2 >About me</h2>
-            <div class="paragraph1"> <p > My name is Baraza John. I come from Uganda. I'm currently working as a marketing manager and a university tutor with an organization called Beselfless.
-                I am hold a Bachelor of Science degree in Applied business management. I am currently pursuing my second degree from the same University, a degree in software development. 
-                I love being outdoors in nature and meeting new people. I love movies and reading books
-                
-                </p>
-                <img  class="img1" src="pictures/baraza.jpg" alt=" baraza John">
-            </div>
-            <h2>Jinja, Uganda</h2>
-            <div id="paragraph2"><p>Jinja is located in Uganda, East Africa. It is known to have the source of the world's longest river, the Nile.
-                The city sits on the banks of Africa's largest lake, Lake Victoria. It is an old city built during British colonial rule in the late 19th century. It is known as the adventure capital
-                of East Africa because of the many thrilling activities it offers. These include bungee jumping, white-water rafting, zip-lining, hiking, etc. The city is Uganda's major tourist destination.
-                
-                </p>
-                <img class="img2" src="pictures/Jinja.jpg" alt="Jinja aerial view">
-            </div>
-        </section>
-        <section class="card2">
-            <h3>Web Dev resources</h3>
-            <ul>
-                <li><a class="card2links" href="https://www.w3schools.com/">w3schools</a></li>
-                <li><a class="card2links" href="https://stackoverflow.com/">stackoverflow</a></li>
-                <li><a class="card2links" href="https://www.freecodecamp.org/">freecodecamp</a></li>
-                <li><a class="card2links" href="https://developer.mozilla.org/en-US/">developer.mozilla</a></li>
-            </ul>
-        </section>
+    <main id="main-content">
+        <h2>Home</h2>
+        <div>
+            <figure>
+                <img src="pictures/aba_nigeria_temple_lds.webp" alt="temple">
+                <figcaption>Aba, Nigeria temple</figcaption>
+            </figure>
+            <figure>
+                <img src="pictures/accra_ghana_temple_lds.webp" alt="temple">
+                <figcaption>Accra, Ghana temple</figcaption>
+            </figure>
+            <figure>
+                <img src="pictures/adelaide_australia_temple_lds.webp" alt="temple">
+                <figcaption>Adelaide, Australia temple</figcaption>
+            </figure>
+            <figure>
+                <img src="pictures/albuquerque_temple_lds.webp" alt="temple">
+                <figcaption>Albuquerque, temple</figcaption>
+            </figure>
+            <figure>
+                <img src="pictures/anchorage_temple_lds.webp" alt="temple">
+                <figcaption>Anchorage, temple</figcaption>
+            </figure>
+            <figure>
+                <img src="pictures/apia_samoa_temple_lds.webp" alt="temple">
+                <figcaption>Apia, Samoa temple</figcaption>
+            </figure>
+            <figure>
+                <img src="pictures/asuncion_paraguay_temple_lds.webp" alt="temple">
+                <figcaption>Asuncion, Paraguay</figcaption>
+            </figure>
+            <figure>
+                <img src="pictures/atlanta_temple_lds.webp" alt="temple">
+                <figcaption>Atlanta, USA temple</figcaption>
+            </figure>
+            <figure>
+                <img src="pictures/birmingham_alabama_temple_lds.webp" alt="temple">
+                <figcaption>Birmingham, Alabama</figcaption>
+            </figure>
+        </div>
     </main>
+
     <footer>
-         <p> 
-            
-                &copy;<span id="currentYear"></span>
-                Baraza John<br>
-                Jinja, Uganda
-            </p>
-        <p id="lastModified"></p>
-        
-    </footer> 
+        <p>&copy;2024 🌸 Baraza John 🌸 Uganda</p>
+        <p id="lastModified"></p> 
+    </footer>
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

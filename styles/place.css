@@ -125,6 +125,50 @@ img{
    background-position: center;
 }
 
+
+
+ /* CSS to insert emoticon using ::before pseudo-element */
+.weather::before {
+   content: "⛅"; /* Unicode character for weather icon (cloud with sun) */
+   display: inline-block; /* Ensure the pseudo-element is displayed inline */
+   margin-right: 0.5em; /* Adjust spacing between the emoticon and text */
+}
+
+/* Other styles for your page */
+body {
+   font-family: Arial, sans-serif;
+   background-color: #f0f0f0;
+   color: #333;
+   padding: 20px;
+   text-align: center;
+}
+
+.weather-heading {
+   font-size: 1.5em;
+   font-weight: bold;
+   margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width:760px) {
    body{
       display: grid;
