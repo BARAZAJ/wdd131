@@ -1,0 +1,86 @@
+:root {
+   
+    --accent-color: #09077a;    /* Accent color */
+    --bg-color:rgb(29, 109, 40);;        /* Background color */
+    --text-color: white;      /* Text color */
+       --hover-color:#133f08;
+ }
+
+
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+    }
+    .hamburger {
+        display: flex;
+    }
+    .menu{
+        display: none;
+    }
+    main div figure img {
+        width:380px;
+        height: 320px;
+        gap: 10px;
+    }
+    main{
+        padding-top: 15%;
+    }
+    
+
+#nav-links.show {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(6, 61, 6);
+    position: absolute;
+    top: 7%;
+    width: 100%;
+    right: 0%;
+    transition: all 0.3s ease;
+    
+    
+    
+  
+
+    
+
+}
+
+#nav-links li a {
+    text-decoration: none;
+    font-size: 100%;
+    list-style-type: none;
+    
+    padding: 10%;
+    color: var(--text-color);
+    
+
+}
+
+#nav-links li a:hover{
+    background-color: rgb(4, 116, 97);
+
+
+}
+#nav-links li {
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4%;
+    
+    
+}
+
+}
+.hamburger.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open .bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.open .bar:nth-child(3) {
+    transform: translateY(-15px) rotate(-45deg);
+}
