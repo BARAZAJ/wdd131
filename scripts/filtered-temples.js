@@ -45,8 +45,27 @@ document.addEventListener('DOMContentLoaded', () => {
             location: "Lima, Perú",
             dedicated: "1986, January, 10",
             area: 9600,
-            imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening.jpg"
-        }
+            imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/adelaide-australia/800x450/adelaide-australia-temple-lds-866420-wallpaper.jpg"
+        },
+        {
+            templeName: "Lima Perú",
+            location: "Lima, Perú",
+            dedicated: "1986, January, 10",
+            area: 98000,
+            imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/anchorage-alaska/800x500/anchorage-temple-lds-746769-wallpaper.jpg"},
+        {
+            templeName: "Albuqueque New Mexico",
+            location: "Albuqueque, New Mexico",
+            dedicated: "2000, March, 4",
+            area: 78000,
+            imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/albuquerque-new-mexico/800x800/albuquerque-temple-lds-820684-wallpaper.jpg"},
+        {
+            templeName: "Arequipa Perú",
+            location: "Arequipa, Perú",
+            dedicated: "2017, March, 4",
+            area: 120000,
+            imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/arequipa-peru/800x500/2-3c2316607190934fc0265f4107b5013b0cc4b21e.jpeg"}
+
     ];
 
     const filterTemples = (criteria) => {
