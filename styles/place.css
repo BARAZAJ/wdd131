@@ -169,7 +169,7 @@ th {
    .weather-heading{
       display: flex;
       justify-content: space-evenly;
-      align-items: center;*/
+      align-items: center;
    }
 
    .weather-img {
