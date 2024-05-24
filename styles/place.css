@@ -80,9 +80,9 @@ footer {
 }
 
 .weather {
-   display: flex;
-   align-items: flex-start;
-   justify-content: flex-start;
+   /*display: flex;
+   /*align-items: flex-start;*/
+   /*justify-content: flex-start;*/
    position: absolute;
    font-size: 100%;
    width: 45%;
@@ -169,7 +169,7 @@ th {
    .weather-heading{
       display: flex;
       justify-content: space-evenly;
-      align-items: center;
+      align-items: center;*/
    }
 
    .weather-img {
