@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.getElementById('nav-links');
     const mainContent = document.getElementById('main-content');
     const gallery = document.getElementById('gallery');
+    const currentSelection = document.getElementById('current-selection');
 
     const temples = [
         {
@@ -73,16 +74,17 @@ document.addEventListener('DOMContentLoaded', () => {
         let filteredTemples;
         switch (criteria) {
             case 'old':
-                filteredTemples = temples.filter(temple => new Date(temple.dedicated.split(', ').slice(1).join('-')) < new Date('2000-01-01'));
+                filteredTemples = temples.filter(temple => new Date(temple.dedicated.split(', ').slice(1).join('-')) < new Date('1900 -01-01'));
                 break;
             case 'new':
                 filteredTemples = temples.filter(temple => new Date(temple.dedicated.split(', ').slice(1).join('-')) >= new Date('2000-01-01'));
                 break;
             case 'large':
                 filteredTemples = temples.filter(temple => temple.area > 20000);
+
                 break;
             case 'small':
-                filteredTemples = temples.filter(temple => temple.area <= 20000);
+                filteredTemples = temples.filter(temple => temple.area <= 10000);
                 break;
             default:
                 filteredTemples = temples;
@@ -90,6 +92,31 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         displayTemples(filteredTemples);
     };
+
+    const updateHeader = (criteria) => {
+        let headerText;
+        switch (criteria) {
+            case 'old':
+                headerText = 'Old';
+                break;
+            case 'new':
+                headerText = 'New';
+                break;
+            case 'large':
+                headerText = 'Large';
+                break;
+            case 'small':
+                headerText = 'Small';
+                break;
+            default:
+                headerText = 'Home';
+                break;
+        }
+        currentSelection.textContent = headerText;
+    };
+
+
+
 
     const displayTemples = (temples) => {
         temples.forEach(temple => {
@@ -127,11 +154,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Update the last modified date
+  
     const lastModified = document.getElementById('lastModified');
     lastModified.textContent = `Last Modification: ${document.lastModified}`;
     
-    // Adjust main content margin when resizing to larger screens
+    
     window.addEventListener('resize', () => {
         if (window.innerWidth > 768) {
             navLinks.classList.remove('show');

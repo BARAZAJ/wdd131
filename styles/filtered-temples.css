@@ -106,7 +106,6 @@ footer {
     background-color: rgb(5, 32, 5);
     color: var(--text-color);
     text-align: center;
-    padding: 10px 20px;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -117,6 +116,11 @@ footer {
 #lastModified {
     font-size: 14px;
     margin-top: 5px;
+}
+main {
+    padding-bottom: 5%;
+    padding-top: 6%;
+    
 }
 
 /*@media (max-width: 768px) {

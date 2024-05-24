@@ -4,93 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Baraza John Brick">
-    <meta name="description" content=" WDD Dynamic Web Fundamentals Responsive Image page">
-    <title>Document</title>
+    <meta name="description" content="WDD Dynamic Web Fundamentals Responsive Image page">
+    <title>Uganda</title>
     <link rel="stylesheet" href="styles/place.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<script src="scripts/place.js" type="text/javascript" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="scripts/place.js" type="text/javascript" defer></script>
 </head>
 <body>
     <header> 
         <h1>Uganda</h1>
     </header>
     <main>
-        
-        <picture>
-        
+        <picture class="bk-img">
             <source media="(max-width: 500px)" srcset="pictures/trees-small.webp">
-    
-            
-            <source media="(min-width: 500px) and (max-width: 1000px)" srcset="pictures/trees-medium.webp">
-    
-           
+            <source media="(min-width: 501px) and (max-width: 1000px)" srcset="pictures/trees-medium.webp">
             <source media="(min-width: 1001px)" srcset="pictures/tree1-large.webp">
-    
-           
             <img src="pictures/tree1-large.webp" alt="Savanna">
-
         </picture>
 
         <div class="data">
-            <h2>Data</h2>
-            <ul>
-                <li><strong>Area:</strong> 100,000 sq km</li>
-                <li><strong>Population:</strong> 50,000,000</li>
-                <li><strong>Capital:</strong> Kampala</li>
-                <li><strong>Languages:</strong> English</li>
-                <li><strong>Currency:</strong> Uganda Shillings</li>
-                <li><strong>Calling Code:</strong> +256</li>
-                <li><strong>Internet TLD:</strong> .UG</li>
-            </ul>
-        </div>
-          
-        <div class="weather">
-            <h2>Weather ></h2>
-            <p>Temperature: 20°C</p>
-            <p>Wind Speed: 10 km/h</p>
-            <p>Wind Chill: <span id="windChillValue"></span></p>
+            <table>
+                <tr>
+                    <th colspan="2">DATA</th>
+                </tr>
+                <tr>
+                    <td><strong>Area:</strong></td>
+                    <td>100,000 sq km</td>
+                </tr>
+                <tr>
+                    <td><strong>Population:</strong></td>
+                    <td>50,000,000</td>
+                </tr>
+                <tr>
+                    <td><strong>Capital:</strong></td>
+                    <td>Kampala</td>
+                </tr>
+                <tr>
+                    <td><strong>Languages:</strong></td>
+                    <td>English</td>
+                </tr>
+                <tr>
+                    <td><strong>Currency:</strong></td>
+                    <td>Uganda Shillings</td>
+                </tr>
+                <tr>
+                    <td><strong>Calling Code:</strong></td>
+                    <td>+256</td>
+                </tr>
+                <tr>
+                    <td><strong>Internet TLD:</strong></td>
+                    <td>.UG</td>
+                </tr>
+            </table>
         </div>
 
+        <div class="weather">
+            <table class="weather">
+                <tr>
+                    <th colspan="2" class="weather-heading">
+                        Weather
+                    </th>
+                </tr>
+                <tr>
+                    <td><strong>Temperature:</strong></td>
+                    <td>20°C</td>
+                </tr>
+                <tr>
+                    <td><strong>Wind Speed:</strong></td>
+                    <td>10 km/h</td>
+                </tr>
+                <tr>
+                    <td><strong>Wind Chill:</strong></td>
+                    <td><span id="windChillValue"></span></td>
+                </tr>
+            </table>
+        </div>
     </main>
     <footer>
-
-        <p> 
-            
-            &copy;<span id="currentYear"></span>
-            Baraza John Jinja, Uganda<br>
-            
+        <p>
+            &copy;<span id="currentYear"></span> Baraza John Jinja, Uganda<br>
         </p>
         <p id="lastModified"></p> 
-
     </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
 </html>
-   
+
