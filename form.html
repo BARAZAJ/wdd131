@@ -34,14 +34,22 @@
 
         <label>Which features did you find useful in the product? (Check all that apply)</label>
         <div class="features">
-            <input type="checkbox" id="durability" name="features" value="Durability">
-            <label for="durability">Durability</label>
-            <input type="checkbox" id="easeOfUse" name="features" value="Ease of Use">
-            <label for="easeOfUse">Ease of Use</label>
-            <input type="checkbox" id="performance" name="features" value="Performance">
-            <label for="performance">Performance</label>
-            <input type="checkbox" id="design" name="features" value="Design">
-            <label for="design">Design</label>
+            <div class="feature-item">
+                <input type="checkbox" id="durability" name="features" value="Durability">
+                <label for="durability">Durability</label>
+            </div>
+            <div class="feature-item">
+                <input type="checkbox" id="easeOfUse" name="features" value="Ease of Use">
+                <label for="easeOfUse">Ease of Use</label>
+            </div>
+            <div class="feature-item">
+                <input type="checkbox" id="performance" name="features" value="Performance">
+                <label for="performance">Performance</label>
+            </div>
+            <div class="feature-item">
+                <input type="checkbox" id="design" name="features" value="Design">
+                <label for="design">Design</label>
+            </div>
         </div>
 
         <label for="writtenReview">Written Review (Optional)</label>
@@ -53,10 +61,15 @@
         <input type="submit" value="Post Review">
     </form>
     <footer>
-       <p> ©2024 🌸 baraza john 🌸 uganda  </p>  
+       <p>©2024 🌸 baraza john 🌸 uganda</p>  
        <p id="lastModified"></p>
-
     </footer>
-    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const lastModifiedElement = document.getElementById('lastModified');
+            const lastModifiedDate = document.lastModified;
+            lastModifiedElement.textContent = `Last modified: ${lastModifiedDate}`;
+        });
+    </script>
 </body>
 </html>

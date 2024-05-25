@@ -63,12 +63,14 @@ select, input[type="date"], input[type="text"], textarea {
     flex-direction: column;
 }
 
-.features input {
-    margin-right: 8px;
+.feature-item {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
 }
 
-.features label {
-    margin: 5px 0;
+.features input {
+    margin-right: 8px;
 }
 
 input[type="submit"] {
@@ -87,7 +89,7 @@ input[type="submit"]:hover {
 
 footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-top: 20px;
     text-align: center;
     font-size: 14px;
