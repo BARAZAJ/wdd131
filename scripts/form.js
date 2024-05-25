@@ -38,7 +38,7 @@ const products = [
   };
 
   
-  function updateFooterContent() {
+  function updateFooterContent(){
     const currentYearElement = document.getElementById('currentYear');
     const currentYear = new Date().getFullYear();
     currentYearElement.textContent = `${currentYear}`;
