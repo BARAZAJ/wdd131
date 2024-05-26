@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --primary-color: rgb(215, 230, 230);   /* Primary color */
+
+    --bg-color: purple;        /* Background color */
+    --text-color:black;      /* Text color */
+    
+    
+
+}
+
+
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color:var(--primary-color);
+    align-items: center;
+    justify-content: flex-start;
+    max-height: 100vh;
+    max-width: 100%;
+    position: relative;
+
+}
+main{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+header{
+    background-color: var(--bg-color);
+    width: 100%;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+h1{
+    font-size: 300%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2{
+    font-size: 200%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p{
+    font-size: 180%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+img{
+    width: 60%;
+    height: 40%;
+    position:absolute;
+    top: 40%;
+    right:5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

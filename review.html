@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Review Submitted</title>
     <link rel="stylesheet" href="styles/form.css">
-    <script src="scripts/form.js" type="text/javascript" defer></script>
+    <script src="scripts/review.js" type="text/javascript" defer></script>
 </head>
 <body>
     <h1>Thank You for Your Review!</h1>
@@ -13,23 +13,9 @@
     <p>Number of reviews submitted: <span id="reviewCounter"></span></p>
     <footer>
       <p>©2024 🌸 baraza john 🌸 uganda</p>
-      <p id="lastModified"></p>
+      <p id="LastModified"></p>
     </footer>
-    <script>
-        window.onload = () => {
-            if (localStorage.getItem('reviewCounter') === null) {
-                localStorage.setItem('reviewCounter', '0');
-            }
-            let reviewCounter = parseInt(localStorage.getItem('reviewCounter'), 10);
-            reviewCounter += 1;
-            localStorage.setItem('reviewCounter', reviewCounter.toString());
-            document.getElementById('reviewCounter').innerText = reviewCounter;
-
-            const lastModifiedElement = document.getElementById('lastModified');
-            const lastModifiedDate = document.lastModified;
-            lastModifiedElement.textContent = `Last modified: ${lastModifiedDate}`;
-        };
-    </script>
+    
 </body>
 </html>
 
