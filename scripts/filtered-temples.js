@@ -1,9 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
     const hamburger = document.getElementById('hamburger');
     const navLinks = document.getElementById('nav-links');
-    const mainContent = document.getElementById('main-content');
-    const gallery = document.getElementById('gallery');
-    const currentSelection = document.getElementById('current-selection');
+    const gallery = document.getElementById('res-grid');
+
+    // Toggle mobile menu
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+    });
 
     const temples = [
         {
@@ -55,8 +58,8 @@ document.addEventListener('DOMContentLoaded', () => {
             area: 98000,
             imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/anchorage-alaska/800x500/anchorage-temple-lds-746769-wallpaper.jpg"},
         {
-            templeName: "Albuqueque New Mexico",
-            location: "Albuqueque, New Mexico",
+            templeName: "Albuquerque New Mexico",
+            location: "Albuquerque, New Mexico",
             dedicated: "2000, March, 4",
             area: 78000,
             imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/albuquerque-new-mexico/800x800/albuquerque-temple-lds-820684-wallpaper.jpg"},
@@ -66,83 +69,91 @@ document.addEventListener('DOMContentLoaded', () => {
             dedicated: "2017, March, 4",
             area: 120000,
             imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/arequipa-peru/800x500/2-3c2316607190934fc0265f4107b5013b0cc4b21e.jpeg"}
-
     ];
 
-    const filterTemples = (criteria) => {
-        gallery.innerHTML = '';
-        let filteredTemples;
-        switch (criteria) {
-            case 'old':
-                filteredTemples = temples.filter(temple => new Date(temple.dedicated.split(', ').slice(1).join('-')) < new Date('1900 -01-01'));
-                break;
-            case 'new':
-                filteredTemples = temples.filter(temple => new Date(temple.dedicated.split(', ').slice(1).join('-')) >= new Date('2000-01-01'));
-                break;
-            case 'large':
-                filteredTemples = temples.filter(temple => temple.area > 20000);
+    createTempleCard(temples);
 
-                break;
-            case 'small':
-                filteredTemples = temples.filter(temple => temple.area <= 10000);
-                break;
-            default:
-                filteredTemples = temples;
-                break;
-        }
-        displayTemples(filteredTemples);
+    const filters = {
+        home: () => temples,
+        old: () => temples.filter(temple => new Date(temple.dedicated).getFullYear() < 1900),
+        new: () => temples.filter(temple => new Date(temple.dedicated).getFullYear() > 2000),
+        large: () => temples.filter(temple => temple.area > 90000),
+        small: () => temples.filter(temple => temple.area < 10000)
     };
 
-    const updateHeader = (criteria) => {
-        let headerText;
-        switch (criteria) {
-            case 'old':
-                headerText = 'Old';
-                break;
-            case 'new':
-                headerText = 'New';
-                break;
-            case 'large':
-                headerText = 'Large';
-                break;
-            case 'small':
-                headerText = 'Small';
-                break;
-            default:
-                headerText = 'Home';
-                break;
-        }
-        currentSelection.textContent = headerText;
-    };
-
-
-
-
-    const displayTemples = (temples) => {
-        temples.forEach(temple => {
-            const templeElement = document.createElement('div');
-            templeElement.classList.add('gallery-item');
-            templeElement.innerHTML = `
-                <h3>${temple.templeName}</h3>
-                <p>${temple.location}</p>
-                <p>Dedicated: ${temple.dedicated}</p>
-                <p>Area: ${temple.area.toLocaleString()} sq ft</p>
-                <img src="${temple.imageUrl}" alt="${temple.templeName}">
-            `;
-            gallery.appendChild(templeElement);
-        });
-    };
-
-    // Initial display of all temples
-    filterTemples('home');
-
-    document.querySelectorAll('.nav-links a, .menu a').forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
-            const filter = e.target.getAttribute('data-filter');
-            filterTemples(filter);
+    document.querySelectorAll('[data-filter]').forEach(link => {
+        link.addEventListener('click', (event) => {
+            event.preventDefault();
+            const filter = link.getAttribute('data-filter');
+            clearTempleCards();
+            createTempleCard(filters[filter]());
         });
     });
+
+    function createTempleCard(filteredTemples) {
+        filteredTemples.forEach(temple => {
+            let card = document.createElement("section");
+            let name = document.createElement("h3");
+            let location = document.createElement("p");
+            let dedication = document.createElement("p");
+            let area = document.createElement("p");
+            let img = document.createElement("img");
+
+            name.textContent = temple.templeName;
+            location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
+            dedication.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
+            area.innerHTML = `<span class="label">Size:</span> ${temple.area} sq ft`;
+            img.setAttribute("src", temple.imageUrl);
+            img.setAttribute("alt", `${temple.templeName} Temple`);
+            img.setAttribute("loading", "lazy");
+
+            card.appendChild(name);
+            card.appendChild(location);
+            card.appendChild(dedication);
+            card.appendChild(area);
+            card.appendChild(img);
+
+            document.querySelector(".res-grid").appendChild(card);
+        });
+    }
+
+    function clearTempleCards() {
+        document.querySelector(".res-grid").innerHTML = "";
+    }
+  
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     hamburger.addEventListener('click', () => {
         navLinks.classList.toggle('show');

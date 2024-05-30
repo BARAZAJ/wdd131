@@ -10,6 +10,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    max-width: 100%;
+    overflow-x: hidden; /* Remove horizontal scrolling */
 }
 
 header {
@@ -21,11 +23,9 @@ header {
     z-index: 1000;
 }
 
-#nav-links{
+#nav-links {
     display: none;
 }
-
-
 
 .navbar {
     display: flex;
@@ -92,7 +92,8 @@ nav {
     margin: 10px;
     padding: 15px;
     text-align: center;
-    width: 300px;
+    flex: 1 1 300px; /* Flex-grow, flex-shrink, and flex-basis properties */
+    box-sizing: border-box;
 }
 
 .gallery-item img {
@@ -117,32 +118,43 @@ footer {
     font-size: 14px;
     margin-top: 5px;
 }
+
 main {
     padding-bottom: 5%;
     padding-top: 6%;
-    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "pics";
+    max-width: 100%;
 }
 
-/*@media (max-width: 768px) {
-    .hamburger {
-        display: flex;
-    }
+#res-grid, .res-grid {
+    grid-area: pics;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    background-color: rgba(193, 216, 184, 0.281);
+}
 
-    .navbar nav ul {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-    }
+h2 {
+    grid-area: header;
+    text-align: center;
+}
 
-    .navbar nav ul.show {
-        display: flex;
-    }
+img {
+    width: 400px;
+    height: 300px;
+}
 
-    .navbar nav ul li {
-        margin: 10px 0;
+@media (max-width: 1200px) {
+    .gallery-item {
+        flex: 1 1 45%; /* Adjust the width for medium screens */
     }
+}
 
-    .navbar nav ul li a {
-        font-size: 20px;
+@media (max-width: 768px) {
+    .gallery-item {
+        flex: 1 1 100%; /* Adjust the width for small screens */
     }
 }
