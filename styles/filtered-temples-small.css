@@ -9,8 +9,8 @@
 
 @media (max-width: 768px) {
     img{
-        width: 500px;
-        height: 400px;
+        max-width: 400px;
+        max-height: 350px;
     }
 
     nav {
@@ -22,11 +22,11 @@
     .menu{
         display: none;
     }
-    main div figure img {
+  /*  main div figure img {
         width:380px;
         height: 320px;
         gap: 10px;
-    }
+    }*/
     main{
         padding-top: 15%;
         padding-bottom: 20%;
