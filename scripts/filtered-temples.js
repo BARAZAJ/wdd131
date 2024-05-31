@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const hamburger = document.getElementById('hamburger');
     const navLinks = document.getElementById('nav-links');
     const gallery = document.getElementById('res-grid');
+    const mainContent = document.getElementById('main-content');
 
     // Toggle mobile menu
     hamburger.addEventListener('click', () => {
@@ -28,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
             location: "Payson, Utah, United States",
             dedicated: "2015, June, 7",
             area: 96630,
-            imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg"
+            imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/800x500/payson-utah-temple-daylight-1416668-wallpaper.jpg"
         },
         {
             templeName: "Yigo Guam",
@@ -122,33 +123,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   
     
-    
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -173,7 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('resize', () => {
         if (window.innerWidth > 768) {
             navLinks.classList.remove('show');
-            mainContent.style.marginTop = '0';
+            mainContent.style.marginTop = '80';
         }
     });
 });

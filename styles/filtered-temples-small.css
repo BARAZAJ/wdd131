@@ -8,6 +8,11 @@
 
 
 @media (max-width: 768px) {
+    img{
+        width: 500px;
+        height: 400px;
+    }
+
     nav {
         display: flex;
     }
@@ -24,6 +29,7 @@
     }
     main{
         padding-top: 15%;
+        padding-bottom: 20%;
     }
     
 
@@ -84,3 +90,17 @@
 .hamburger.open .bar:nth-child(3) {
     transform: translateY(-15px) rotate(-45deg);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

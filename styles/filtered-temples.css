@@ -61,7 +61,7 @@ nav {
 }
 
 .menu li a:hover {
-    background-color: var(--hover-color);
+    background-color: rgb(4, 116, 97);
 }
 
 .hamburger {
@@ -126,6 +126,7 @@ main {
     grid-template-columns: 1fr;
     grid-template-areas: "header" "pics";
     max-width: 100%;
+    padding-bottom: 10%;
 }
 
 #res-grid, .res-grid {
@@ -151,10 +152,17 @@ img {
     .gallery-item {
         flex: 1 1 45%; /* Adjust the width for medium screens */
     }
-}
-
-@media (max-width: 768px) {
     .gallery-item {
         flex: 1 1 100%; /* Adjust the width for small screens */
     }
+    img{
+        width: 500px;
+        height: 400px;
+    }
+
+
+
+
 }
+
+
