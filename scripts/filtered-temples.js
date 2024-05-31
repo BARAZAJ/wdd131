@@ -77,8 +77,15 @@ document.addEventListener('DOMContentLoaded', () => {
             location: "Arequipa, Perú",
             dedicated: "2017, March, 4",
             area: 120000,
-            imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/arequipa-peru/400x250/1-55f6c59ce8f9c093a9c689067f8674335de544e2.jpeg"}
-    ];
+            imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/arequipa-peru/400x250/1-55f6c59ce8f9c093a9c689067f8674335de544e2.jpeg"},
+            {
+                templeName: "Johannesburg South Africa",
+                location: "Johannesburg, South Africa",
+                dedicated: "2008, May, 5",
+                area: 82000,
+                imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/johannesburg-south-africa/400x250/johannesburg-south-africa-temple-lds-83166-wallpaper.jpg"}
+    
+        ];
 
     createTempleCard(temples);
 
