@@ -9,8 +9,8 @@
 
 @media (max-width: 768px) {
     img{
-        max-width: 400px;
-        max-height: 350px;
+        width: 500px;
+        height: 260px;
     }
 
     nav {
