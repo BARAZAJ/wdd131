@@ -264,7 +264,20 @@ main div figure img {
     justify-content: center;
     margin-bottom: 8%;
     
-    
+
+}
+main{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+
+    img{
+        max-width: 100%;
+    }
+}
+.container{
+    background-color:  rgb(215, 230, 230);
+    top:40%;
 }
 
 }

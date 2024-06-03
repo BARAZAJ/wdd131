@@ -11,7 +11,7 @@ body {
 }
 
 h1 {
-    color:  #03355e;
+    color: white;
     ;
 }
 main{
@@ -71,11 +71,15 @@ select, input[type="date"], input[type="text"], textarea {
 .features {
     display: flex;
     flex-direction: column;
+    
 }
 
 .feature-item {
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    
+
+    justify-content: left;
     margin: 5px 0;
 }
 
@@ -103,11 +107,13 @@ footer {
     margin-top: 20px;
     text-align: center;
     font-size: 14px;
-    color: #0c0b0b;
+    color:white;
     width: 100%;
     background-color:purple ;
 }
-
+.final-comment{
+    color: black;
+}
 
 @media (max-width: 768px) {
     nav {
@@ -125,7 +131,8 @@ footer {
         gap: 10px;
     }
     main{
-        padding-top: 15%;
+        padding-top: 20%;
+        padding-bottom: 18%;
     }
     
 
