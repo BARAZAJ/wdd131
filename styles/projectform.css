@@ -108,3 +108,79 @@ footer {
     background-color:purple ;
 }
 
+
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+    }
+    .hamburger {
+        display: flex;
+    }
+    .menu{
+        display: none;
+    }
+    main div figure img {
+        width:380px;
+        height: 320px;
+        gap: 10px;
+    }
+    main{
+        padding-top: 15%;
+    }
+    
+
+#nav-links.show {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: purple;
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    right: 0%;
+    transition: all 0.3s ease;
+    
+}
+
+#nav-links li a {
+    text-decoration: none;
+    font-size: 100%;
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+    padding: 10%;
+    color: var(--text-color);
+    
+
+}
+
+#nav-links li a:hover{
+    background-color: rgb(4, 116, 97);
+
+
+}
+#nav-links li {
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8%;
+    
+    
+}
+
+}
+.hamburger.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open .bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.open .bar:nth-child(3) {
+    transform: translateY(-15px) rotate(-45deg);
+}
+
