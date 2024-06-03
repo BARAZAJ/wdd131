@@ -1,7 +1,7 @@
 :root {
    
     --accent-color: #09077a;    /* Accent color */
-    --bg-color:rgb(2, 5, 2);;        /* Background color */
+    --bg-color: purple;        /* Background color */
     --text-color: white;      /* Text color */
     --hover-color:rgb(4, 116, 97);
        
@@ -14,10 +14,11 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: rgb(215, 230, 230);
 }
 
 header {
-    background-color: rgb(6, 61, 6);
+    background-color:purple;
     color:var(--text-color);
     position: fixed;
     top:0%;
@@ -110,7 +111,7 @@ menu {
 }
 
 footer {
-    background-color:rgb(5, 32, 5);
+    background-color:purple;
     color: var(--text-color);
     text-align: center;
     padding: 0;

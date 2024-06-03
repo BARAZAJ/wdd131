@@ -18,13 +18,13 @@ const colleges = [
   ];
   
   window.onload = () => {
-    const productNameSelect = document.getElementById('productName');
+    const CollegeNameSelect = document.getElementById('CollegeName');
   
-    products.forEach(product => {
+    colleges.forEach(college => {
         const option = document.createElement('option');
-        option.value = product.id;
-        option.textContent = product.name;
-        productNameSelect.appendChild(option);
+        option.value = college.id;
+        option.textContent = college.name;
+        CollegeNameSelect.appendChild(option);
     });
   };
   
